@@ -1,0 +1,30 @@
+{
+  "name": "Blume Proxy",
+  "version": "3.2",
+  "manifest_version": 2,
+  "description": "HTTP Proxy Avoidance",
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "commands": {
+    "cmd_start_proxy": {
+      "suggested_key": {"default": "Ctrl+Shift+9"},
+      "description": "Start Proxy"
+    },
+    "cmd_stop_proxy": {
+      "suggested_key": {"default": "Ctrl+Shift+0"},
+      "description": "Stop Proxy"
+    }
+  },
+  "icons": {
+     "128":"icon.png"
+    },
+  "permissions": ["system.network","proxy","notifications","storage","http://blume.dev/","http://samhdev.com/","http://blumeproxy.tk/","http://epic-maths-papers.tk","https://accounts.blume.dev/","http://blumeproxy.tk/*"],
+  "sockets": {
+    "tcpServer" : {
+      "listen": ["*"]
+    }
+  }
+}

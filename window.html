@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="theme.css">
+    <style>
+    @font-face {
+      font-family: 'ass-light';
+      src: url('fonts/Assistant-Light.ttf');
+    }
+    @font-face {
+      font-family: 'ass-reg';
+      src: url('fonts/Assistant-Regular.ttf');
+    }
+    @font-face {
+      font-family: 'ass-bold';
+      src: url('fonts/Assistant-Bold.ttf');
+    }
+      body {
+        margin: 0;
+        background-color: #444;
+        color: white;
+        font-family: "ass-light", sans-serif;
+      }
+      #mainTable {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .title {
+        font-family: "ass-bold", sans-serif;
+        font-size: 24px;
+      }
+      img {
+            margin-left: 5px;
+            margin-right: 10px;
+            border-radius: 80px 80px;
+      }
+      button {
+        border: none;
+        background-color: white;
+        padding: 6px;
+        font-family: "ass-light", sans-serif;
+      }
+      select {
+        order: none;
+        background-color: white;
+        padding: 6px;
+        font-family: "ass-light", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+  <table id="mainTable" style="width: 100%;display:block;" >
+    <tr>
+      <td style="width: 110px"><img src="icon.png" width="90px;" id="imger"></td>
+      <td>
+          <a class="title">Blume Proxy</a><br>
+          Status: <a id="stats"> </a><br>
+          <button id="start_btn">Start</button>
+          <button id="stop_btn">Stop</button>
+          <button id="web_btn">Info</button><br><hr style="color:white;">
+          Tunnel: <select id="domains"></select>
+      </td>
+    </tr>
+  </table>
+  <div id="login">
+    <div id="blume_embed"></div>
+  </div>
+  </body>
+  <script src="jquery.js"></script>
+  <script src="window.js"></script>
+</html>
